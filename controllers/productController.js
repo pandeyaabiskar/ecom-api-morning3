@@ -2,7 +2,9 @@
 const ProductModel = require('../models/ProductModel')
 const returnAllProducts = async (req, res) => {}
 
-const returnSingleProduct = async (req, res) => {}
+const returnSingleProduct = async (req, res) => {
+  console.logI("Shekhar changes");
+}
 
 const createProduct = async (req, res) => {
   try {
@@ -22,4 +24,8 @@ module.exports = {
   createProduct,
   updateProduct,
   deleteProduct,
+<<<<<<< HEAD
+};
+=======
 }
+>>>>>>> main
