@@ -13,6 +13,13 @@ const updateProduct = async (req, res) => {
 
 };
 const deleteProduct = async (req, res) => {
+  const { productID } = req.params;
+  try {
+    const result = await ProductModel.findByIdAndDelete(productID);
+    res.json(result);
+  } catch (err) {
+    res.json(err);
+  }
 
 };
 
