@@ -6,6 +6,7 @@ const PORT = 3000
 
 const app = express()
 
+
 //Connect to database
 connectDatabase()
 
@@ -19,7 +20,7 @@ app.use('/api/products', productRouter)
 console.log('HELLO')
 
 app.listen(PORT, () => {
-  console.log(`Server started at port ${PORT}`);
+  console.log(`Server already started at port ${PORT}`);
 });
 
 console.log("Aabiskar Pandey");
