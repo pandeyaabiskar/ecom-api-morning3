@@ -26,31 +26,14 @@ const returnSingleProduct = async (req, res) => {
 };
 
 const createProduct = async (req, res) => {
-  try {
-    const result = await ProductModel.create(req.body);
-    res.json(result);
-  } catch (err) {
-    res.json(err);
-  }
+
 };
 
 const updateProduct = async (req, res) => {
-  const {productID} = req.params;
-  try {
-    const result = await ProductModel.findByIdAndUpdate(productID, req.body, {new: true});
-    res.json(result);
-  } catch (err) {
-    res.json(err);
-  }
+
 };
 const deleteProduct = async (req, res) => {
-  const {productID} = req.params;
-  try {
-    const result = await ProductModel.findByIdAndDelete(productID);
-    res.json(result);
-  } catch (err) {
-    res.json(err);
-  }
+
 };
 
 module.exports = {
