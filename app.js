@@ -10,6 +10,7 @@ const app = express()
 connectDatabase()
 
 app.use(cors())
+ main
 //Required to access json data in post function
 app.use(express.json())
 
