@@ -3,6 +3,7 @@ const returnAllProducts = async (req, res) => {
 };
 
 const returnSingleProduct = async (req, res) => {
+  console.log("Changes made bhy shekhar")
 };
 
 const createProduct = async (req, res) => {
@@ -23,5 +24,3 @@ module.exports = {
   updateProduct,
   deleteProduct,
 };
-
-const name ="HEloofijd";
