@@ -3,7 +3,7 @@ const returnAllProducts = async (req, res) => {
 };
 
 const returnSingleProduct = async (req, res) => {
-  console.log("Changes made bhy shekhar")
+  console.log("Changes made bhy shekhar shrestha");
 };
 
 const createProduct = async (req, res) => {
